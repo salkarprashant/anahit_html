@@ -1,0 +1,300 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  z-index: 100;
+    padding: 20px 0;
+  transition: all 0.5s ease;
+    background: #080A12
+}
+.sidebar.side-close {
+  width: 75px;
+}
+.sidebar .logo-details {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+    padding: 0 25px
+}
+.sidebar .logo-details i {
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+     background:url("../images/head-spriti-icon.png")no-repeat -350px -53px;
+    position: relative;
+    right: -58px;
+    top: 15px;
+    cursor: pointer
+}
+.sidebar.side-close .logo-details i {
+    background-position: -350px 0;
+      left: -20px;
+    position: relative;
+}
+.sidebar .logo-details .logo_name {
+  font-size: 22px;
+  color: #fff;
+  transition: 0.5s ease;
+  transition-delay: 0.1s;
+}
+.sidebar.side-close .logo-details .logo_name {
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links {
+  height: 100%;
+  padding: 30px 0;
+  overflow: auto;
+}
+.sidebar.side-close .nav-links {
+  overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover {
+  background: #191C26;
+}
+.sidebar .nav-links li .iocn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.side-close .nav-links li .iocn-link {
+  display: block;
+}
+.sidebar .nav-links li i {
+  height: 50px;
+  min-width: 65px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.menu-title{
+    padding: 0 20px;
+    display:block;
+    transition: all 0.5s ease;
+}
+.side-close .menu-title{
+    display: none
+}
+.menu-icon{
+    background: url("../images/head-spriti-icon.png")no-repeat 0 0;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+.exchange-icon{
+    background-position: 20px -117px
+}
+.exchange-icon:hover{
+    background-position:20px -157px
+}
+.stocks-icon{
+     background-position: -40px -115px;
+}
+.stocks-icon:hover{
+     background-position: -40px -155px
+}
+.commodi-icon{
+     background-position:-100px -117px;
+}
+.commodi-icon:hover{
+     background-position:-100px -156px;
+}
+.stra-icon{
+     background-position:-160px -118px;
+}
+.stra-icon:hover{
+     background-position:-160px -156px;
+}
+.sect-icon{
+     background-position:-218px -117px;
+}
+.sect-icon:hover{
+      background-position:-218px -156px;
+}
+.macro-icon{
+     background-position:-277px -117px;
+}
+.macro-icon:hover{
+      background-position:-277px -156px;
+}
+.social-icon{
+    background-position:-333px -117px;
+}
+.social-icon:hover{
+    background-position:-333px -156px;
+}
+.cur-icon{
+    background-position:-390px -117px;
+}
+.cur-icon:hover{
+    background-position:-390px -156px;
+}
+.hist-icon{
+    background-position:-447px -117px;
+}
+.hist-icon:hover{
+    background-position:-447px -156px;
+}
+.fav-icon{
+    background-position:-504px -117px;
+}
+.fav-icon:hover{
+    background-position:-504px -157px;
+}
+.sidebar .nav-links li.showMenu i.arrow {
+  background:url("../images/head-spriti-icon.png")no-repeat -550px -150px;
+}
+.sidebar .nav-links li i.arrow {
+  background:url("../images/head-spriti-icon.png")no-repeat -550px -110px;
+}
+
+.sidebar .nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+    font-weight: normal
+}
+
+.sidebar .nav-links li a .link_name {
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.sidebar.side-close .nav-links li a .link_name {
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar.side-close .nav-links li a .link_name.menu-title{
+    display: none
+}
+.sidebar .nav-links li .sub-menu {
+  padding: 6px 6px 14px 65px;
+  margin-top: -10px;
+  display: none;
+ transition: all 0.5s ease;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+  display: block;
+   
+}
+.sidebar .nav-links li .sub-menu a {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+    
+}
+.sidebar .nav-links li .sub-menu .li-circle{
+    position: relative
+}
+.sidebar .nav-links li .sub-menu .li-circle:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    border:2px solid #A9AFC3;
+    position: absolute;
+    top: 10px;
+    left: -33px;
+    display: block
+}
+.sidebar .nav-links li .sub-menu a:hover:before{
+    border:2px solid #dc4e4f;
+    
+}
+.sidebar .nav-links li .sub-menu a:hover {
+  opacity: 1;
+}
+.sidebar.side-close .nav-links li .sub-menu {
+    width: 200px;
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+    background: #191C26;
+}
+/*.sidebar.side-close .nav-links li:hover .sub-menu {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}*/
+.sidebar .nav-links li .sub-menu .link_name {
+  display: none;
+}
+.sidebar.side-close .nav-links li .sub-menu .link_name {
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+.sidebar .nav-links li .sub-menu.blank {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li:hover .sub-menu.blank {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-section {
+  position: relative;
+  height: 100vh;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+.sidebar.side-close ~ .home-section {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+.home-section .home-content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+  color: #11101d;
+  font-size: 35px;
+}
+.home-section .home-content .bx-menu {
+  margin: 0 15px;
+  cursor: pointer;
+    background: url("../images/burger-menu-icon.png")no-repeat 0 0;
+}
+
+
+@media (max-width: 420px) {
+  .sidebar.side-close .nav-links li .sub-menu {
+    display: none;
+  }
+}
