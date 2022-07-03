@@ -19,6 +19,7 @@ h2 {
     font-size: 22px;
     font-weight: 500
 }
+
 /**Hover css**/
 a {
     color: #393F54;
@@ -271,6 +272,7 @@ header {
     border-radius: 0;
     background:none;
     position: relative;
+    overflow: hidden;
 }
 .grid-container .card:before {
     content:"";
@@ -462,3 +464,36 @@ header {
     border-top: 1px solid #3A3F50;
     padding: 40px 0 0;
 }
+.anim-slide {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes slideUpIn {
+    0% {
+      -webkit-transform: translateY(30px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+    }
+    0% {
+      -webkit-transform: translateY(30px);
+    }
+  }
+  @keyframes slideUpIn {
+    0% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+    0% {
+      transform: translateY(30px);
+    }
+  }
+  .slideUpIn {
+    -webkit-animation-name: slideUpIn;
+    animation-name: slideUpIn;
+  }

@@ -40,3 +40,6 @@ $(document).on('click', '.btn-list', showList);
        $(".btn-grid").addClass("active");
        $(".btn-list").removeClass("active");
     });
+
+  
+ 
